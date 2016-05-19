@@ -1,0 +1,106 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @keithbradley1
+ Watch 18
+  Star 28
+ Fork 15 nashville-software-school/front-end-milestones
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy path
+front-end-milestones/4-modern-javascript-developer/exercises/MJ_PROTOTYPAL_CARS.md
+73ab239  2 minutes ago
+@chortlehoort chortlehoort Major revision of the Car Manufactory exercises instructions, and als…
+1 contributor
+RawBlameHistory     100 lines (68 sloc)  2.02 KB
+Car Manufactory
+Setup
+
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below and paste. It doesn't matter what directory you are currently in.
+
+mkdir -p ~/workspace/exercises/mjd/cars && cd $_
+Instructions
+
+Follow the instructions in the comments below.
+
+manufactory.js
+
+/*
+  Create a function named Car with one property named `manufactured_date`
+  whose value will be Date.Now()
+ */
+
+/*
+  Create a constructor function named Make with one
+  argument that will hold the manufacturer of the Make.
+
+  Set its prototype to the Car function.
+
+  Define a property `manufacturer` and assign the
+  manufacturer property to the argument value.
+ */
+
+
+
+/*
+    Create a constructor function named Model with one
+       argument that will hold the name of the Model.
+
+    Set its prototype to the Make function.
+
+    Define a property `modelName` and set its value to the argument value.
+*/
+
+
+/*
+    Create a new instance of your Model constructor.
+*/
+
+
+/*
+    Being an avid car collector, you own three different cars all of
+    same model from your favorite manufacturer.
+
+    Create three new instances for each of your three favorite cars.
+*/
+
+
+/*
+    Being a rich, avid car collector, you own 2 cars from your second
+    favorite manufacturer. You also one 1 car from your third favorite
+    manufacturer.
+*/
+If not live-coding, here is some sample coding to get you started.
+
+function Car () {
+  // Create the manufactured date property (see above)
+};
+
+/*
+  Make is-a Car
+ */
+function Make (maker) {
+  this.manufacturer = maker;
+}
+// Set the prototype to Car
+
+/*
+  Chevrolet is-a Make
+ */
+function Chevrolet (name) {
+  this.modelName = name;
+}
+Chevrolet.prototype = new Make("GM");
+
+/*
+  Camaro is-a Chevrolet
+ */
+function Camaro () {
+
+}
+// Set the prototype to appropriate model you created above and set the model name argument
+Camaro.prototype = new Chevrolet("Camaro");
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
